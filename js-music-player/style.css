@@ -1,0 +1,179 @@
+body {
+  background-color: rgb(20, 1, 32);
+
+  /* Smoothly transition the background color */
+  transition: background-color .5s;
+  
+}
+
+.navbar-toggler .icon-bar {
+  margin: 7px;
+  display: block;
+  width: 22px;
+  height: 1px;
+  background-color: #0e0303;
+  border-radius: 1px;
+  text-decoration-color: white
+  ;
+}
+
+
+#modal1 .modal-content {
+  margin-left: -70%;
+  margin-top: 10%;
+}
+
+#modal2 .modal-content {
+  margin-left: 70%;
+  margin-top: -104.3%;
+}
+
+#modal3 .modal-content {
+  margin-left: 70%;
+  margin-top: 20%;
+}
+
+#modal4 .modal-content {
+  margin-left: -70%;
+  margin-top: -105%;
+}
+
+#modal5 .modal-content {
+  margin-left: 70%;
+  margin-top: 20%;
+  
+}
+
+#modal6 .modal-content {
+  margin-left: -70%;
+  margin-top: -105%;
+}
+
+
+
+
+
+
+
+
+
+.player {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.track-art {
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  background-image: url("https://images.pexels.com/photos/262034/pexels-photo-262034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size: cover;
+  border-radius: 15%;
+}
+
+.now-playing {
+  font-size: 1rem;
+  color: white;
+}
+
+.track-name {
+  font-size: 3rem;
+  color: white;
+}
+
+.track-artist {
+  font-size: 1.5rem;
+  color:white;
+
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+
+.playpause-track, .prev-track, .next-track {
+  padding: 25px;
+  opacity: 0.8;
+
+  /* Smoothly transition the opacity */
+  transition: opacity .2s;
+}
+
+.playpause-track:hover, .prev-track:hover, .next-track:hover {
+  opacity: 1.0;
+}
+
+.slider_container {
+  width: 75%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: rgb(250, 249, 249);
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.seek_slider:hover, .volume_slider:hover {
+  opacity: 1.0;
+  color: white;
+}
+
+.seek_slider {
+  width: 60%;
+  color: white;
+}
+
+.volume_slider {
+  width: 30%;
+  color: white;
+}
+
+.current-time, .total-duration {
+  padding: 10px;
+  color: white;
+}
+
+i.fa-volume-down, i.fa-volume-up {
+  padding: 10px;
+  color: white;
+}
+
+i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+  cursor: pointer;
+}
