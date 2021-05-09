@@ -50,7 +50,7 @@ let track_list = [
   {
     name: "Drunk Groove",
     artist: "Maruv",
-    image: "https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500 ",
+    image: "https://images.pexels.com/photos/276223/pexels-photo-276223.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     path: "songs/groove.mp3",
   },
 
