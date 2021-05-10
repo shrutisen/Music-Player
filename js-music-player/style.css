@@ -1,8 +1,12 @@
 body {
   background-color: rgb(20, 1, 32);
+  height: 100%;
 
-  /* Smoothly transition the background color */
-  transition: background-color .5s;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
   
 }
 

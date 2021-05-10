@@ -24,7 +24,7 @@ let track_list = [
   {
     name: "Demons",
     artist: "Imagine Dragons",
-    image: "https://images.pexels.com/photos/428429/pexels-photo-428429.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    image: "https://images.unsplash.com/photo-1614644756940-3a865ed54d7b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGxhbmRzY2FwZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     path: "songs/demons.mp3"
   },
   {
@@ -105,13 +105,13 @@ function playpauseTrack() {
 function playTrack() {
   curr_track.play();
   isPlaying = true;
-  playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-3x"></i>';
+  playpause_btn.innerHTML = '<i class="fa fa-pause fa-3x"></i>';
 }
 
 function pauseTrack() {
   curr_track.pause();
   isPlaying = false;
-  playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-3x"></i>';;
+  playpause_btn.innerHTML = '<i class="fa fa-play fa-3x"></i>';;
 }
 
 function nextTrack() {
