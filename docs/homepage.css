@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url("media/image2.jpg");
+    background-size: contain;
+    background-position: center;
+    position: center;
+}
+.navbar{
+    width: 88%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10%;
+
+}
+.navbar ul li a{
+    text-decoration: black;
+    color: black;
+    font-size: larger;
+    font-family: Broadway;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+.left-col{
+    margin-left: 30%;
+    margin-top: 0.4%;
+}
+.left-col h1{
+    font-size: xxx-large;
+    color: black;
+    font-family: Broadway;
+
+}
+.right-col{
+    float: right;
+    margin-right: 45%;
+}

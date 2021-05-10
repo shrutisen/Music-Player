@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=yes">
+
+  <title>Simple Music Player</title>
+  <!-- Load FontAwesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Load the custom CSS style file -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  
+</head>
+<body>
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1606339279668-e7ef2b1bd53b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGd1aXRhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+      background-repeat: no-repeat;
+    }
+    </style>
+
+
+ 
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="navbar-light">
+                    <a class="nav-link active" href="index.html" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">HOME</a>
+                </li>
+                <li class="navbar-light">
+                  <a class="nav-link active" href="homepage.html" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">PLAYER</a>
+              </li>
+                <li class="navbar-light">
+                    <a class="nav-link active" href="tracks.html" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">TRACKS</a>
+                </li>
+                <li class="navbar-light">
+                  <a class="nav-link active" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">PLAYLISTS</a>
+              </li>
+              
+                
+            </ul>
+           
+            <form class="d-flex my-2 my-lg-10">
+                <input class="form-control me-sm-2" type="search" placeholder="Track Title" aria-label="Search" style="width: 400px; background-color: rgb(233, 233, 232);">
+                
+                <button class="btn btn-dark my-5 my-sm-0" type="submit" style="width: 50px;">GO</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<br><br>
+  
+  
+  <div class="player">
+    <div class="details">
+      <div class="now-playing" style="font-size: larger">PLAYING x OF y</div>
+      <div class="track-art"></div>
+      <div class="track-name">Track Name</div>
+      <div class="track-artist">Track Artist</div>
+    </div>
+    <div class="buttons">
+      <div class="prev-track" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
+      <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play fa-3x"></i></div>
+      <div class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
+    </div>
+    <div class="slider_container">
+      <div class="current-time">00:00</div>
+      <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+      <div class="total-duration">00:00</div>
+    </div>
+    <div class="slider_container">
+      <i class="fa fa-volume-down"></i>
+      <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+      <i class="fa fa-volume-up"></i>
+    </div>
+  </div>
+
+  <!-- Load the main script for the player -->
+  <script src="main.js"></script>
+</body>
+</html>
