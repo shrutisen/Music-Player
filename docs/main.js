@@ -24,7 +24,7 @@ let track_list = [
   {
     name: "Demons",
     artist: "Imagine Dragons",
-    image: "https://images.unsplash.com/photo-1614644756940-3a865ed54d7b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGxhbmRzY2FwZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    image: "https://images.unsplash.com/photo-1607629121274-29b21cec9068?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzR8fGRlbW9ucyUyMGRhcmtuZXNzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     path: "songs/demons.mp3"
   },
   {
@@ -50,7 +50,7 @@ let track_list = [
   {
     name: "Drunk Groove",
     artist: "Maruv",
-    image: "https://images.pexels.com/photos/276223/pexels-photo-276223.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    image: "https://images.unsplash.com/photo-1611244806964-91d204d4a2a7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhY2glMjBwYXJ0eXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     path: "songs/groove.mp3",
   },
 
