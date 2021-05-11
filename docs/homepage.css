@@ -13,6 +13,7 @@ font-family: sans-serif;
     background-size: contain;
     background-position: center;
     position: center;
+    margin: auto;
 }
 .navbar{
     width: 88%;
@@ -37,6 +38,8 @@ font-family: sans-serif;
     width: 100%;
     position: absolute;
     top: 30%;
+    right: 20%;
+    left: 3%;
 }
 .left-col{
     margin-left: 30%;
@@ -46,6 +49,7 @@ font-family: sans-serif;
     font-size: xxx-large;
     color: black;
     font-family: Broadway;
+    text-align: justify;
 
 }
 .right-col{
