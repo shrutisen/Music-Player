@@ -66,34 +66,51 @@ body {
 
 
 
+
+
 #modal1 .modal-content {
-  margin-left: -90%;
-  margin-top: 15%;
+  margin-left: -100%;
+  margin-top: 25%;
 }
 
 #modal2 .modal-content {
-  margin-left: 50%;
+  margin-left: 30%;
   margin-top: -106%;
 }
 
 #modal3 .modal-content {
-  margin-left: 50%;
-  margin-top: 20%;
+  margin-left: 155%;
+  margin-top: -105%;
 }
 
 #modal4 .modal-content {
-  margin-left: -90%;
-  margin-top: -108%;
+  margin-left: 155%;
+  margin-top: 30%;
 }
 
 #modal5 .modal-content {
-  margin-left: 50%;
-  margin-top: 20%;
+  margin-left: 30%;
+  margin-top: -108%;
   
 }
 
 #modal6 .modal-content {
-  margin-left: -90%;
+  margin-left: -100%;
+  margin-top: -108%;
+}
+
+#modal7 .modal-content {
+  margin-left: 155%;
+  margin-top: 30%;
+}
+
+#modal8 .modal-content {
+  margin-left: 30%;
+  margin-top: -117%;
+}
+
+#modal9 .modal-content {
+  margin-left: -100%;
   margin-top: -108%;
 }
 

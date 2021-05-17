@@ -66,6 +66,27 @@ let track_list = [
     path: "songs/freedom.mp3",
   },
 
+  {
+    name: "Just Hold On",
+    artist: "Steve Aoki",
+    image: "https://images.pexels.com/photos/891030/pexels-photo-891030.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    path: "songs/just.mp3",
+  },
+
+  {
+    name: "Back To Life",
+    artist: "Hailee Steinfeld",
+    image: "https://images.pexels.com/photos/148523/pexels-photo-148523.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    path: "songs/back.mp3",
+  },
+
+  {
+    name: "Here With Me",
+    artist: "Marshmello",
+    image: "https://images.pexels.com/photos/459301/pexels-photo-459301.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    path: "songs/freedom.mp3",
+  },
+
 
 
 ];
@@ -79,7 +100,6 @@ function openNav() {    document.getElementById("mySidenav").style.width = "140p
 }
 function closeNav() {    document.getElementById("mySidenav").style.width = "0";    document.getElementById("main").style.marginLeft= "0";
 }
-
 
 
 

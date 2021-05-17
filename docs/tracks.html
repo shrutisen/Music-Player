@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple Music Player</title>
   <!-- Load FontAwesome icons -->
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -16,6 +18,14 @@
   <!-- Load the custom CSS style file -->
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit-icons.min.js"></script>
+
     
 </head>
 <body >
@@ -23,6 +33,7 @@
     body {
       background-image: url('https://images.unsplash.com/photo-1606339279668-e7ef2b1bd53b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGd1aXRhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
       background-repeat: no-repeat;
+    
     }
     </style>
 
@@ -33,13 +44,32 @@
   <h9 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Click on the Titles to play Track.</h9> 
 </div>
 
-<div id="mySidenav" class="left-nav" style="height: 1118px;">
+<div id="mySidenav" class="left-nav" style="height: 1173px;">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="navoptions"><br>
-  <a href="tracks.html" style="color: black;margin:0 0 5px 0;"><span class="fa fa-music" aria-hidden="true"></span><p style="margin-left: -11px;">SONGS</p></a><br>
+  <a href="tracks.html" style="color: black;margin:0 0 5px 0;"><span class="fa fa-music" aria-hidden="true"></span><p style="margin-left: -11px;">TRACKS</p></a><br>
   <a href="homepage.html" style="color:black;margin-bottom:5px;"><span class="fas fa-headphones" aria-hidden="true"></span><p style="margin-left: -15px;">PLAYER</p></a><br>
-  <a href="#" style="color:black;margin-bottom:5px;"><span class="fa fa-search" aria-hidden="true"></span><p style="margin-left: -14px;">SEARCH</p></a><br>
-  <a href="index.html" style="color:black;"><span class="fa fa-power-off" aria-hidden="true"></span><p style="margin-left: -2px;">EXIT</p></a>
+  
+  <a href="index.html" style="color:black;"><span class="fa fa-home" aria-hidden="true"></span><p style="margin-left: -2px;">HOME</p></a><br>
+  <div>
+    <a class="uk-navbar-toggle" href="#"><span class="fa fa-search" aria-hidden="true" style="color: black; margin-bottom: 5 px;"></span><p style="color: black; margin-left: -14px;">SEARCH</p></a>
+    <div class="uk-dropdown" uk-drop="mode: click; cls-drop: uk-dropdown; boundary: auto">
+
+        <div class="uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-width-expand">
+                <form class="uk-search uk-search uk-width-3-3">
+                    <input class="uk-search-input" type="search" placeholder="Song" autofocus>
+                </form>
+            </div>
+            <div class="uk-width-auto">
+                <a class="uk-dropdown-close" href="#" uk-close></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+  
       </div></div>
       <div id="main">
         <span style="font-size:45px;color:white;cursor:pointer;float:left;" onclick="openNav()">&#9776;</span>
@@ -199,6 +229,78 @@
       song6.play();}
       else{
         song6.pause();
+    }
+  }
+</script>
+
+
+<div class="modal-dialog modal-sm" id="modal7">
+  <div class="modal-content" style="padding-bottom: 15px;">
+  <img src="https://images.pexels.com/photos/891030/pexels-photo-891030.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+  <button class="btn btn-link btn-lg btn-block" id="b7" style="font-size: larger; font-weight: 700;color: black; text-align: center;">Just Hold On</button>
+  <div class="track-artist" style="font-size: large; color: black; text-align: center;">Steve Aoki</div>
+</div>
+
+<audio id="song7">
+  <source src="songs/just.mp3" type="audio/mp3">
+</audio>
+
+<script>
+  var song7= document.getElementById("song7");
+  var b7= document.getElementById("b7");
+  b7.onclick= function(){
+    if(song7.paused){
+      song7.play();}
+      else{
+        song7.pause();
+    }
+  }
+</script>
+
+
+<div class="modal-dialog modal-sm" id="modal8">
+  <div class="modal-content" style="padding-bottom: 15px;">
+  <img src="https://images.pexels.com/photos/148523/pexels-photo-148523.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+  <button class="btn btn-link btn-lg btn-block" id="b8" style="font-size: larger; font-weight: 700;color: black; text-align: center;">Back To Life</button>
+  <div class="track-artist" style="font-size: large; color: black; text-align: center;">Hailee Steinfeld</div>
+</div>
+
+<audio id="song8">
+  <source src="songs/back.mp3" type="audio/mp3">
+</audio>
+
+<script>
+  var song8= document.getElementById("song8");
+  var b8= document.getElementById("b8");
+  b8.onclick= function(){
+    if(song8.paused){
+      song8.play();}
+      else{
+        song8.pause();
+    }
+  }
+</script>
+
+
+<div class="modal-dialog modal-sm" id="modal9">
+  <div class="modal-content" style="padding-bottom: 15px;">
+  <img src="https://images.pexels.com/photos/459301/pexels-photo-459301.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+  <button class="btn btn-link btn-lg btn-block" id="b9" style="font-size: larger; font-weight: 700;color: black; text-align: center;">Here With Me</button>
+  <div class="track-artist" style="font-size: large; color: black; text-align: center;">Marshmello</div>
+</div>
+
+<audio id="song9">
+  <source src="songs/here.mp3" type="audio/mp3">
+</audio>
+
+<script>
+  var song9= document.getElementById("song9");
+  var b9= document.getElementById("b9");
+  b6.onclick= function(){
+    if(song9.paused){
+      song9.play();}
+      else{
+        song9.pause();
     }
   }
 </script>
