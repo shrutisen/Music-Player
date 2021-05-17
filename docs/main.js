@@ -2,6 +2,7 @@ let now_playing = document.querySelector(".now-playing");
 let track_art = document.querySelector(".track-art");
 let track_name = document.querySelector(".track-name");
 let track_artist = document.querySelector(".track-artist");
+let track_lyric = document.querySelector(".track-lyric")
 
 let playpause_btn = document.querySelector(".playpause-track");
 let next_btn = document.querySelector(".next-track");
@@ -27,6 +28,7 @@ let track_list = [
   {
     name: "Demons",
     artist: "Imagine Dragons",
+    lyric:"https://www.azlyrics.com/lyrics/imaginedragons/demons.html",
     image: "https://images.unsplash.com/photo-1607629121274-29b21cec9068?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzR8fGRlbW9ucyUyMGRhcmtuZXNzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     path: "songs/demons.mp3"
   },
@@ -72,6 +74,12 @@ let track_list = [
 
 
 //background animation
+
+function openNav() {    document.getElementById("mySidenav").style.width = "140px";  document.getElementById("main").style.marginLeft = "140px";
+}
+function closeNav() {    document.getElementById("mySidenav").style.width = "0";    document.getElementById("main").style.marginLeft= "0";
+}
+
 
 
 
