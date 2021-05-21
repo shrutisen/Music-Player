@@ -49,6 +49,7 @@ let track_list = [
     name: "Clarity",
     artist: "Zedd",
     image: "https://images.pexels.com/photos/2902536/pexels-photo-2902536.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 ",
+    lyric: "hello",
     path: "songs/clarity.mp3",
   },
 
@@ -101,6 +102,24 @@ function openNav() {    document.getElementById("mySidenav").style.width = "100p
 function closeNav() {    document.getElementById("mySidenav").style.width = "0";    document.getElementById("main").style.marginLeft= "0";
 }
 
+function showLyric(track_index){
+
+  clearInterval(updateTimer);
+  resetValues();
+  curr_track.src = track_list[track_index].path;
+  curr_track.load();
+
+
+  track_art.style.backgroundImage = "url(" + track_list[track_index].image + ")";
+  
+  track_name.textContent = track_list[track_index].name;
+  track_artist.textContent = track_list[track_index].artist;
+ 
+  now_playing.textContent = "PLAYING " + (track_index + 1) + " OF " + track_list.length;
+
+  updateTimer = setInterval(seekUpdate, 1000);
+  curr_track.addEventListener("ended", nextTrack);
+}
 
 
 function loadTrack(track_index) {
@@ -123,6 +142,10 @@ function resetValues() {
   curr_time.textContent = "00:00";
   total_duration.textContent = "00:00";
   seek_slider.value = 0;
+}
+
+function showLyric() {
+  document.getElementById("lyricmodal").showModal();
 }
 
 // Load the first track in the tracklist
