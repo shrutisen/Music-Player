@@ -70,7 +70,7 @@ let track_list = [
   {
     name: "Just Hold On",
     artist: "Steve Aoki",
-    image: "https://images.pexels.com/photos/891030/pexels-photo-891030.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    image: "https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     path: "songs/just.mp3",
   },
 
