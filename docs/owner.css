@@ -1,21 +1,46 @@
 *{margin: 0;
     padding: 0;
     font-family: Broadway;
-    color: white;
+    color: black;
 }
 .container{
     height: 100vh;
     width: 100%;
-    background-image: url("https://images.pexels.com/photos/54133/pexels-photo-54133.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-    background-size: contain;
+    background-image: url("https://github.com/archita-188/The-music-player/blob/main/docs/media/pic3.jpg?raw=true");
+    background-size: cover;
     background-position: center;
+    background-repeat: repeat;
 }
 .navbar{
-    margin-right: 60%;
+    margin-right: 40%;
+    margin-left: 40%;
 }
 .navbar h1{
     font-size: xxx-large;
     font-family: Broadway;
-    margin-right: 30%;
 
+
+}
+.column1{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.column1 h2{
+    margin-top: 5%;
+    font-family: Broadway;
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+
+}
+.column2{
+    margin-left: 0%;
+    margin-right: 30%;
+}
+.column2 h3{
+    font-family: Broadway;
+    font-size: xx-large;
+    color: black;
+    margin-left: 50%;
+    margin-top: 2%;
 }
