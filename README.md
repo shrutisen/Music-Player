@@ -1,7 +1,7 @@
 # Music-Player
 This is a Simple Music Player Website.
 
-Link : [Music Player](https://shrutisen.github.io/Music-Player/)
+Link : [Music Player](https://themusic-player.netlify.app/)
 
 Homepage
 
